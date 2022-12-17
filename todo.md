@@ -1,0 +1,2 @@
+- Tweet model
+- User has many tweets (one to many)
