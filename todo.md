@@ -1,2 +1,8 @@
 - Tweet model
 - User has many tweets (one to many)
+- Tweet controller (index | create | destroy)
+- Update routes - root especially
+- create grid based layout for root/main
+- update index and create controller actions for Tweets
+- add some javascript with turbo/stimulus/hotwire
+- create layout_by_resource and define devise layouts vs application

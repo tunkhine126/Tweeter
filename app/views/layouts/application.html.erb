@@ -6,11 +6,16 @@
 
     <header>
       <%= render "shared/flash_notice" %>
-      <%= render "shared/navbar" %>
     </header>
 
-    <main class="flex-grow">
-      <%= content_for?(:content) ? yield(:content) : yield %>
+    <main class="flex-grow container mx-auto px-4">
+      <div class="grid lg:grid-cols-12 grid-cols-1 h-screen pr-6">
+        <%= render "layouts/left_nav" %>
+        <div class="lg:col-span-6 border-x">
+          <%= content_for?(:content) ? yield(:content) : yield %>
+        </div>
+        <%= render "layouts/right_nav" %>
+      </div>
     </main>
   </body>
 </html>

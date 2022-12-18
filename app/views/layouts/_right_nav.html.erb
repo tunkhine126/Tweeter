@@ -1,0 +1,11 @@
+<div class="lg:col-span-4 pl-6 pt-6">
+  <div class="bg-gray-50 w-full min-h-[150px] rounded-lg p-6 mb-6">Sidebar stuff</div>
+  <% if user_signed_in? %>
+    <p class="mb-4">
+      Signed in as <%= current_user.name %>
+    </p>
+    <%= button_to "Sign out", destroy_user_session_path, method: :delete, class: button_class(theme: "primary"), data: { turbo: false } %>
+  <% else %>
+    <%= link_to "Sign in", new_user_session_path, class: button_class(theme: "primary") %>
+  <% end %>
+</div>
