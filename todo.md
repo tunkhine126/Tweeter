@@ -6,3 +6,4 @@
 - update index and create controller actions for Tweets
 - add some javascript with turbo/stimulus/hotwire
 - create layout_by_resource and define devise layouts vs application
+- ability to add user handle (migration to users | update devise permitted params | updatre views)
