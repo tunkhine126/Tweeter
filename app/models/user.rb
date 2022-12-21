@@ -7,6 +7,6 @@ has_person_name
          :recoverable, :rememberable, :validatable
 
   has_many :tweets
-
+  has_one_attached :profile_image
   validates_uniqueness_of :username
 end

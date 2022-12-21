@@ -7,9 +7,6 @@
     <p class="mb-4">
       @<%= current_user.username %>
     </p>
-    <div class="my-4">
-      <%= button_to "Edit Profile", edit_user_registration_path, method: :get, class: button_class(theme: "primary"), data: { turbo: false } %>
-    </div>
     <%= button_to "Sign out", destroy_user_session_path, method: :delete, class: button_class(theme: "primary"), data: { turbo: false } %>
   <% else %>
     <%= link_to "Sign in", new_user_session_path, class: button_class(theme: "primary") %>
