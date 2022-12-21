@@ -7,10 +7,10 @@
 - add some javascript with turbo/stimulus/hotwire
 - create layout_by_resource and define devise layouts vs application
 - ability to add user handle (migration to users | update devise permitted params | updatre views)
-
 - Tweet character length validations
 - Rendering localized errors for Tweets
-- Add user profile images
+
+- Add user profile images (with active_storage)
 - Create profile pages
 - Add dynamic profile_image view helper
 - Adding static Tweet controls

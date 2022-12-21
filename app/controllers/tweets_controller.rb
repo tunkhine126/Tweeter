@@ -10,14 +10,14 @@ class TweetsController < ApplicationController
     @tweet = Tweet.new(tweet_params)
     @tweet.user = current_user
 
-    respond_to do |format|
+    # respond_to do |format|
       if @tweet.save
         format.turbo_stream
       else
         flash[:tweet_errors] = @tweet.errors.full_messages
         redirect_to root_path
       end
-    end
+    # end
   end
 
   def destroy
