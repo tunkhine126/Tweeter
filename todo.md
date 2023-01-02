@@ -13,4 +13,8 @@
 
 - Create profile pages
 - Add dynamic profile_image view helper
-- Adding static Tweet controls
+- Adding static Tweet controls starting with delete
+- Update turbo stream for tweets
+- Handle empty states (No tweets)
+  - create new partial for no tweets
+   

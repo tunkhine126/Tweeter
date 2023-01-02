@@ -1,3 +1,9 @@
+<%# Render tweets in real time %>
 <%= turbo_stream.prepend "tweets" do %>
   <%= render "tweet", tweet: @tweet %>
+<% end %>
+
+<%# Remove the empty state partial if it is present in real time %>
+<%= turbo_stream.remove Tweet.new do %>
+  <%= render "tweets/empty" %>
 <% end %>
