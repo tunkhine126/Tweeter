@@ -17,4 +17,12 @@
 - Update turbo stream for tweets
 - Handle empty states (No tweets)
   - create new partial for no tweets
-   
+  - update turbo stream 
+- Retweet (add column to Tweets[:tweet_id]
+  - Retweet routes
+  - tweet_type method
+  - retweet controller action
+  - retweet turbo stream
+  - tweet controls partial
+  - retweet partial
+  - update the index.html.erb file to make things dynamic
