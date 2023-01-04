@@ -26,3 +26,5 @@
   - tweet controls partial
   - retweet partial
   - update the index.html.erb file to make things dynamic
+- Create Comment model - references User and Tweet and body:text
+  -
