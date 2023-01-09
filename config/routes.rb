@@ -1,6 +1,7 @@
 require 'sidekiq/web'
 
 Rails.application.routes.draw do
+  get 'likes/create'
   get 'comments/create'
   get 'comments/destroy'
   get 'profiles/show'

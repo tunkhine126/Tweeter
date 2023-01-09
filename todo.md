@@ -27,4 +27,9 @@
   - retweet partial
   - update the index.html.erb file to make things dynamic
 - Create Comment model - references User and Tweet and body:text
-  -
+  - Create comment controller with create and destroy action
+  - Add comments routes
+  - Add views and turbo stream
+- Likes
+  - Create new model with polymorphic association
+  - Create Likes controller

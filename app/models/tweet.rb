@@ -2,6 +2,7 @@ class Tweet < ApplicationRecord
   belongs_to :user
   belongs_to :tweet, optional: true
   has_many :comments
+  has_many :likes, as: :likeable
 
   validates :body, length: { maximum: 240 }, allow_blank: false, unless: :tweet_id
 
