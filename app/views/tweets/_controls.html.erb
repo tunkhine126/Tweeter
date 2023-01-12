@@ -11,6 +11,12 @@
     </li>
   <% end %>
 
+   <li>
+      <%= content_tag :div, class: "#{dom_id(tweet)}_likes" do %>
+        <%= render "likes/likes", likeable: tweet %>
+      <% end %>
+    </li>
+
   <% if user_signed_in? && current_user == tweet.user %>
     <li>
       <%= button_to tweet_path(tweet), method: :delete, form: { data: { turbo_confirm: "Are you sure?" } }, class: "text-gray-500 space-x-2 group flex items-center justify-center" do %>
