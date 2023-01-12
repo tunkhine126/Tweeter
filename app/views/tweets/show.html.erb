@@ -27,13 +27,13 @@
 
   <ul class="py-3 border-t text-gray-700 flex space-x-4 text-sm">
     <li>
-      <span class="font-semibold text-gray-800">3</span> Retweets
+      <span class="font-semibold text-gray-800"><%= Tweet.where(tweet_id: @tweet).size %></span> Retweets
     </li>
-    <li>
+    <%# <li>
       <span class="font-semibold text-gray-800">4</span> Quote Tweets
-    </li>
+    </li> %>
     <li>
-      <span class="font-semibold text-gray-800">4</span> Likes
+      <span class="font-semibold text-gray-800"><%= @tweet.likes.size %></span> Likes
     </li>
   </ul>
 
