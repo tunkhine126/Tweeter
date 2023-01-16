@@ -33,3 +33,5 @@
 - Likes
   - Create new model with polymorphic association
   - Create Likes controller
+  - Add Likeable concern
+  - Update tweet and comment models
